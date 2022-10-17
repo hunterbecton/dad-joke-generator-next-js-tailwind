@@ -8,7 +8,7 @@ export const JokeCard = () => {
   const [isFetching, setIsFetching] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [joke, setJoke] = useState();
+  const [joke, setJoke] = useState('Loading ...');
 
   useEffect(() => {
     const controller = new AbortController();
